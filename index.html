@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calc</title>
+
+    <style>
+        body {
+            background-color: palevioletred;
+        }
+
+        .simp {
+            border: 1px;
+            border: solid;
+            display: inline-block;
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px;
+            border-color: black;
+            margin-top: 10%;
+            margin-left: 38%;
+            text-align: center;
+            background-color: pink;
+            box-shadow: 10px 10px 10px;
+        }
+
+        .btn1 {
+            color: black;
+            background-color: blue;
+            border-radius: 5px;
+            padding: 4px;
+            margin: 5px;
+
+        }
+
+        .btn2 {
+            color: black;
+            background-color: blue;
+            border-radius: 5px;
+            padding: 4px;
+            margin: 5px;
+
+        }
+
+        .btn3 {
+            color: black;
+            background-color: blue;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+
+        }
+
+        .btn4 {
+            color: black;
+            background-color: blue;
+            border-radius: 5px;
+            padding: 4px;
+            margin: 5px;
+        }
+
+        .btn1,
+        .btn2,
+        .btn3,
+        .btn4:hover {
+            cursor: pointer;
+        }
+
+        .answer {
+            width: 170px;
+            display: inline-block;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <html>
+
+    <head>
+        <h2>SIMPLE CALCULATOR</h2>
+        <div class="simp">
+            <script>
+                function add() {
+                    var numOne, numTwo, sum;
+                    numOne = parseInt(document.getElementById("first").value);
+                    numTwo = parseInt(document.getElementById("second").value);
+                    sum = numOne + numTwo;
+                    document.getElementById("answer").value = sum;
+                }
+                function sub() {
+                    var numOne, numTwo, sub;
+                    numOne = parseInt(document.getElementById("first").value);
+                    numTwo = parseInt(document.getElementById("second").value);
+                    sub = numOne - numTwo;
+                    document.getElementById("answer").value = sub;
+                }
+                function mul() {
+                    var numOne, numTwo, mul;
+                    numOne = parseInt(document.getElementById("first").value);
+                    numTwo = parseInt(document.getElementById("second").value);
+                    mul = numOne * numTwo;
+                    document.getElementById("answer").value = mul;
+                }
+                function div() {
+                    var numOne, numTwo, div;
+                    numOne = parseInt(document.getElementById("first").value);
+                    numTwo = parseInt(document.getElementById("second").value);
+                    div = numOne / numTwo;
+                    document.getElementById("answer").value = div;
+                }
+
+            </script>
+    </head>
+
+    <body>
+        <div class="label">
+            <p>Enter the First Number <input id="first"></p>
+            <p>Enter the Second Number <input id="second"></p>
+        </div>
+        <div class="btn">
+
+            <button class="btn1" onclick="add()">Add</button>
+            <button class="btn2" onclick="sub()">Sub</button>
+            <button class="btn3" onclick="mul()">Mul</button>
+            <button class="btn4" onclick="div()">Div</button>
+        </div>
+        <div class="answer">
+            <p>Answer <input id="answer"></p>
+        </div>
+
+        </div>
+    </body>
+
+    </html>
